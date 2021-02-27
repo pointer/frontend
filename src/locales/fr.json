@@ -1,0 +1,442 @@
+{
+  "errors": {
+    "404": "404 Page not found",
+    "BAD_TOKEN": "Bad token",
+    "WRONG_PASSWORD": "Wrong password",
+    "USER_DOES_NOT_EXIST": "User does not exists",
+    "PASSWORDS_DONT_MATCH": "Passwords don´t match",
+    "PASSWORD_TOO_SHORT_MIN_5": "Password too short, minimum 5 characters",
+    "BLOCKED_USER": "Too many failed login attempts, user blocked temporarely",
+    "SERVER_TIMEOUT_CONNECTION_ERROR": "Server is not responding, connection error",
+    "EMAIL_IS_NOT_VALID": "E-mail not valid",
+    "IS_EMPTY": "Empty fields",
+    "ERROR": "Error",
+    "MISSING": "Missing fields",
+    "NOT_FOUND_OR_ALREADY_VERIFIED": "Not found or already verified",
+    "NOT_FOUND_OR_ALREADY_USED": "Not found or already used",
+    "NOT_FOUND": "Not found",
+    "UNAUTHORIZED": "Unauthorized",
+    "EMAIL_ALREADY_EXISTS": "E-mail already exists",
+    "ID_MALFORMED": "ID malformed",
+    "ERROR_WITH_FILTER": "Error with filter",
+    "CITY_ALREADY_EXISTS": "City already exists",
+    "NOT_YET": "Pas Encore Implementé "
+  },
+  "common": {
+    "DELETE": "Effacer",
+    "CANCEL": "Annuler",
+    "SAVE": "Enregistrer",
+    "WARNING": "Warning",
+    "DO_YOU_REALLY_WANT_TO_DELETE_THIS_ITEM": "Voulez vous vraiment effacer cet item?",
+    "CLOSE": "Fermer",
+    "SAVED_SUCCESSFULLY": "Sauvegarder avec succes",
+    "DELETED_SUCCESSFULLY": "Effacer avec succes",
+    "CREATED": "Créer le",
+    "UPDATED": "MAJ le",
+    "GO_BACK": "En arrière",
+    "DONE": "Done",
+    "REFRESH": "Rafraichir",
+    "ADD": "Ajouter"    
+  },
+  "loading": {
+    "PLEASE_WAIT": ""
+  },
+  "footer": {
+    "MADE_WITH": "",
+    "BY": ""
+  },
+  "menuItems": {
+    "HOME": "Acceuil",
+    "ABOUT": "",
+    "MY_PROFILE": "",
+    "SIGNUP": "Sign Up",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout"
+  },
+  "controlItems": {
+  },
+  "metricItems": {
+  },
+  "adminItems": {
+    "ADMIN": "Admin",
+    "ACCOUNTS": "Comptes",
+    "USERS": "Utilsateurs",
+    "CUSTOMER": "Clients",
+    "INVOICE_TYPE": "Types de facture",         
+    "PRODUCT": "Produits",
+    "PRODUCT_TYPE": "Types de produit",    
+    "TRANSACTION_TYPE": "Types de transaction",    
+    "SYSTEM_CONFIG": "Configuration",
+    "DOCUMENTS" : "Documents",
+    "INVOICE" : "Générer",
+    "BUSINESS" : "Organisations"    
+  },
+  "manageItems": {
+    "TITLE": "Management",
+    "headers": { 
+    "ORDER": "Commandes", 
+    "ORDER_ITEM": "Articles de commande",
+    "TRANSACTION": "Transactions",              
+    "INVOICE": "Factures",
+    "INVOICE_LINE_ITEM": "Éléments de facture"            
+    }
+  },
+  "roles": {
+    "ADMIN": "Administrateur",
+    "USER": "Usager",
+    "CLIENT": "client"
+  },
+  "dataTable": {
+    "NEW_ITEM": "Nouvel Item",
+    "EDIT_ITEM": "Editer Item",
+    "CANCEL": "Annuler",
+    "SAVE": "Enregistrer",
+    "EDIT": "Editer",
+    "DELETE": "Effacer",
+    "RESET": "Reinitialiser",
+    "ACTIONS": "Actions",
+    "ROWS_PER_PAGE": "Lignes par page",
+    "NO_DATA": "Pas de données",
+    "NO_RESULTS": "Pas de resultats",
+    "OF": "de",
+    "SEARCH": "Chercher",
+    "NEW_TEXT_MESSAGE": "Message",
+    "NEW_MESSAGE_TEXT": "Message",
+    "NEW_MESSAGE_SUBJECT": "Subject",
+    "SEND": "Envoyer",
+    "GENERATE": "Generer",
+    "Add": "Ajouter",
+    "FIND_PUNCH": "Antérieure",
+    "FIND_AGENT": "Chercher",
+    "NEW_ACCOUNT": "Nouv. compte",
+    "DETAILS": "Details"      
+
+  },
+  "landing": {
+    "TITLE": "Landing",
+    "DESCRIPTION": "",
+    "BUY_ME_A_COFFEE": "",
+    "BUY_ME_A_COFFEE_DESCRIPTION": "",
+    "DESCRIPTION_VUE": "",
+    "DESCRIPTION_API": "",
+    "API_DOCUMENTATION": "",
+    "FRONTEND_DOCUMENTATION": ""
+  },
+  "home": {
+    "TITLE": "Protected Home",
+    "GREETING": "Bienvenue %{0}",
+    "DESCRIPTION": "Cette page est disponible en privé lorsque l'utilisateur s'identifie avec ses identifiants",
+    "VERIFY_YOUR_ACCOUNT": "IMPORTANT: Verify your account",
+    "VERIFY_YOUR_ACCOUNT_DESCRIPTION": "Vous devez vérifier votre compte en cliquant sur le lien envoyé à votre e-mail pour pouvoir profiter de toutes les fonctionnalités de notre application",
+    "CLOSE": "Clore"
+  },
+  "about": {
+    "TITLE": "About",
+    "DESCRIPTION": "Facturation"
+  },
+  "login": {
+    "TITLE": "Login",
+    "DESCRIPTION": "Ceci est une démo. La base de données se réinitialise toutes les 30 minutes. Donc, tout ce que vous faites sera perdu après un court laps de temps..<br />E-mail: admin@admin.com <br />Password: 12345",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Password",
+    "LOGIN": "Login",
+    "FORGOT_PASSWORD": "Forgot password?",
+    "USERNAME":"Utilisateur"
+  },
+  "forgotPassword": {
+    "TITLE": "Forgot my password",
+    "EMAIL": "E-mail",
+    "DESCRIPTION": "Enter your E-mail address so we can send you a message with instructions to recover your password",
+    "RECOVER": "Recover",
+    "RESET_EMAIL_SENT": "We have sent a message to %{0} with instructions to recover your password"
+  },
+  "resetPassword": {
+    "TITLE": "Change Password",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password",
+    "CHANGE_PASSWORD": "Change Password",
+    "PASSWORD_CHANGED": "Password changed successfully"
+  },
+  "signup": {
+    "TITLE": "Signup",
+    "NAME": "Nom",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Mot de Passe",
+    "CONFIRM_PASSWORD": "Confirmer",
+    "SIGN_ME_UP": "Sign me up"
+  },
+  "verify": {
+    "TITLE": "E-mail verification",
+    "EMAIL_VERIFIED": "E-mail verifié avec success"
+  },
+  "myProfile": {
+    "TITLE": "My profile",
+    "CHANGE_MY_PASSWORD": "Changer Mot de Passe",
+    "CURRENT_PASSWORD": "Mot de Passe courant",
+    "NEW_PASSWORD": "Nouv. Mot de Passe",
+    "CONFIRM_NEW_PASSWORD": "Confirmer Mot de Passe",
+    "PASSWORD_CHANGED": "Mot de Passe changé avec success",
+    "NAME": "Nom",
+    "EMAIL": "E-mail",
+    "PHONE": "Phone",
+    "CITY": "Localité",
+    "NO_RESULTS_FOUND": "No results found",
+    "COUNTRY": "Pays",
+    "SAVE": "Sauvegarder",
+    "PROFILE_SAVED_SUCCESSFULLY": "Profile Sauvegardé avec success"
+  },
+  "cities": {
+    "TITLE": "Ville",
+    "headers": {
+      "NAME": "Nom"
+    }
+  },
+  "account": {
+    "TITLE": "Comptes",
+    "headers": {
+      "ACCOUNT_NUM": "No du compte",      
+      "ACCOUNT_NAME": "Nom du compte",
+      "CUSTOMER": "Client",
+      "ACCOUNT_OPEN_DATE": "Date",
+      "ACCOUNT_DETAILS": "Détails"
+    }
+  },
+  "customer": {
+    "TITLE": "Clients",
+    "headers": {
+      "NEW_ITEM": "Nouveau client",      
+      "FIRSTNAME": "Prénom",
+      "LASTNAME": "Nom",
+      "CUSTOMER_NAME": "Client",
+      "CUSTOMER_ABN": "Siren",
+      "EMAIL": "email",
+      "COMPANY": "Compagnie",
+      "ADDRESS": "Adresse",
+      "POSTAL_CODE": "CP",
+      "PHONE": "Téléphone",
+      "MOBILE": "Mobile",
+      "CITY": "Localité",
+      "PROVINCE": "Dept",
+      "ROLE": "Role",
+      "BUSINESS_TYPE": "Type industrie",
+      "CUSTOMER_VAT": "TVA numero",
+      "CUSTOMER_VAT_MOSS": "TVA MOSS",
+      "COUNTRY": "Pays",
+      "COUNTRY_CODE": "Code pays",
+      "CUSTOMER_URL": "Site web"
+      
+    }
+  },
+  "supplier": {
+    "TITLE": "Fournisseurs",
+    "headers": {
+      "FIRSTNAME": "Prénom",
+      "LASTNAME": "Nom",
+      "SUPPLIER_NAME": "Compagnie",
+      "SUPPLIER_ABN": "Siren",
+      "EMAIL": "email",
+      "COMPANY": "Compagnie",
+      "ADDRESS": "Adresse",
+      "POSTAL_CODE": "CP",
+      "PHONE": "Téléphone",
+      "MOBILE": "Mobile",
+      "CITY": "Localité",
+      "PROVINCE": "Dept",
+      "ROLE": "Role",
+      "BUSINESS_TYPE": "Type d'industrie"
+    }
+  },
+  "invoiceType":{
+    "TITLE": "Type de facture",
+    "headers": {
+      "INVOICE_TYPE": "Type facture",
+      "DESCRIPTION" : "Description"
+    }
+  },
+  "invoice": {
+    "TITLE": "Factures",
+    "headers": {
+      "EDIT_INVOICE": "Edit. Facture",
+      "INVOICE_NUM": "Numero",
+      "INVOICE_TYPE": "Type",
+      "INVOICE_STATUS": "Status",      
+      "INVOICE_DATE": "Date",
+      "CREATED_BY": "Créer par",
+      "UPDATED_BY": "MAJ par",      
+      "ORDER": "Commande",
+      "GENERATE_INVOICE": "Génerer", 
+      "DISPLAY_INVOICE": "Voir",               
+      "OTHER_INVOICE_DETAILS": "Autre Details",
+      "SUB_TOTAL" : "S/total" 
+    }
+  },
+  "invoiceLineItem": {
+    "TITLE": "Ligne de facture",
+    "headers": {
+      "LINE_ITEM_NUM": "Numero ligne",
+      "ORDER_ITEM": "Article de commande",
+      "INVOICE": "Facture",
+      "PRODUCT": "Produit",
+      "PRODUCT_PRICE": "Prix",
+      "PRODUCT_QUANTITY": "Quantité",
+      "TAX_PAYABLE": "TVA %",
+      "OTHER_LINE_ITEM_DETAILS": "Autres",
+      "CREATED_BY": "Créer par"   
+    }
+  },
+  "users": {
+    "TITLE": "Utilisateurs",
+    "headers": {
+      "USER_NAME": "Nom Utilisateur",
+      "FIRST_NAME": "Prénom",
+      "LAST_NAME": "Nom",
+      "USER_AVATAR": "Avatar",
+      "EMAIL": "E-mail",
+      "ROLE": "Role",
+      "VERIFIED": "Verifié",
+      "CITY": "Ville",
+      "SKILLS": "Compétences",
+      "OBSERVATIONS": "Observations",
+      "PHONE": "Téléphone",
+      "STATUS": "Disponible"
+    },
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password"
+  },
+  "business": {
+    "TITLE": "Businesses",
+    "headers": {
+      "CONTEXT": "",
+      "TYPE": "Type",
+      "NAME": "Nom",
+      "STREET_ADDRESS": "Rue",
+      "ADDRESS_LOCALITY": "Ville",
+      "ADDRESS_REGION": "Dept.",
+      "POSTAL_CODE": "Code Postal",
+      "TELEPHONE": "Telephone",
+      "EMAIL": "email",
+      "URI": "URL",
+      "CONTACT_NAME": "Contact",
+      "JOB_TITLE": "Titre",
+      "CONTACT_PHONE": "Tel. Contact",
+      "CONTACT_EMAIL": "Contact email"
+    }
+  },
+  "order": {
+    "TITLE": "Commande",
+    "headers": {
+      "ORDER_NUM": "Numero", 
+      "NEW_ITEM": "Nouvelle commande",      
+      "CUSTOMER": "Client",
+      "ORDER_DATE": "Date",
+      "ORDER_STATUS": "Status",
+      "CREATED_BY": "Créer par",      
+      "OTHER_ORDER_DETAILS": "Autres" 
+    }
+  },
+  "orderItem": {
+    "TITLE": "Ligne de commande",
+    "headers": {
+      "ORDER": "Commande",
+      "PRODUCT": "Produit",
+      "PRODUCT_PRICE": "Prix",
+      "PRODUCT_QUANTITY": "Quantité",
+      "LINE_ITEM": "Total ligne",
+      "LINE_ITEM_TAX": "Ligne tax",      
+      "OTHER_ORDER_ITEM_DETAILS": "Autres Details" 
+    }
+  },  
+  "product": {
+    "TITLE": "Produit",
+    "headers": {
+      "PRODUCT_NEW": "Nouv. Produit",
+      "PRODUCT_NAME": "Désignation",
+      "PRODUCT_CODE": "Code",
+      "PRODUCT_PRICE": "Prix achat",
+      "PRODUCT_TYPE_CODE": "Type",
+      "PRODUCT_DESCRIPTION": "Description",      
+      "OTHER_PRODUCT_DETAILS": "Autres Details" ,
+      "PRODUCT_TAX_RATING": "Taux TVA",
+      "PRODUCT_STOCK" : "En stock",
+      "PRODUCT_MIN_STOCK": "Stock min",
+      "PRODUCT_SAFETY_STOCK" : "Stock sécurité",
+      "PRODUCT_STOCK_REORDER" : "Réappro.",
+      "PRODUCT_NATURE" : "Catégorie",
+      "PRODUCT_SALE_CLASS": "Vente Classif.",
+      "PRODUCT_SUPPLIER" : "Fournisseur",
+      "PRODUCT_MEASURE" : "Mesure",
+      "PRODUCT_MARGIN" : "Marge %",
+      "PRODUCT_COEFFICIENT" : "Coefficient",
+      "PRODUCT_GROSS_MARGIN" : "Marge brute",
+      "PRODUCT_PURCHASE_CLASS" : "Achat Classif."
+    }
+  },
+  "productType": {
+    "TITLE": "Type Produit",
+    "headers": {
+      "PRODUCT_TYPE_CODE": "Code",
+      "DESCRIPTION": "Description",
+      "TAX_RATING": "Taux TVA",
+      "OTHER_PRODUCT_TYPE_DETAILS": "Autres Details"    
+    }
+  },
+  "transaction": {
+    "TITLE": "Transaction",
+    "headers": {
+      "TRANSACTION_NUM": "Num trans.",      
+      "TRANSACTION_DESCRIPTION": "Description",
+      "TRANSACTION_ACCOUNT": "Compte",
+      "TRANSACTION_INVOICE": "Facture",
+      "TRANSACTION_DATE": "Date",
+      "TRANSACTION_TYPE": "Type",
+      "TRANSACTION_AMOUNT": "Montant",
+      "TRANSACTION_COMMENT": "Comment",
+      "TRANSACTION_CREATED_BY": "Créer par",      
+      "OTHER_TRANSACTION_DETAILS": "Autres Details"      
+    }
+  },
+  "transactionType": {
+    "TITLE": "Type transaction",
+    "headers": {
+      "TRANSACTION_TYPE": "Type",
+      "TRANSACTION_TYPE_DESCRIPTION": "Description"    
+    }
+  },
+  "organisation": {
+    "TITLE": "Organisation",
+    "headers": {
+      "DISPLAY_NAME": "Nom",
+      "ORGANISATION_ABN": "Sirene",
+      "LEGAL_NAME": "Nom légal",
+      "ORGANISATION_DESCRIPION": "Description",
+      "POSTAL_ADDRESS": "Adresse",                        
+      "POSTAL_CODE": "CP",
+      "LOCALITY": "Localité",
+      "PROVINCE": "Dept.",
+      "COUNTRY": "Pays",
+      "PHONE": "Tel.",
+      "EMAIL": "Email",                        
+      "URL": "Site web",
+      "VAT": "Numero TVA",
+      "DUE_DATE": "Date d'échéance",
+      "TAX_RATE": "Taux TVA",
+      "BANK": "Compte banquaire",
+      "RIB": "RIB",
+      "IBAN": "IBAN",                        
+      "BIC": "BIC"                   
+    }
+  },  
+  "layoutType": {
+    "LAYOUT_TYPE_DAY": "Jour",
+    "LAYOUT_TYPE_WEEK": "Semaine",
+    "LAYOUT_TYPE_MONTH": "Mois",
+    "LAYOUT_TYPE_4DAYS": "4 Jours",
+    "LAYOUT_TYPE_TODAY": "Aujourd'hui"
+  },
+  "dashboardItems": {
+    "TITLE": "Dashboard",
+    "headers": {
+      "DASHBOARD": "Dashboard"
+    }
+  }
+}
