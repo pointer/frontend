@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <span></span>
+    <span> </span>
   </v-container>
 </template>
 
