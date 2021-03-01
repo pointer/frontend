@@ -594,7 +594,7 @@ export default {
       }, [])
     },
     doSomething(v) {
-      // console.log('pagination', v)
+      // // console.log('pagination', v)
       this.pagination = v
     },
     getFormat(date) {
@@ -638,7 +638,7 @@ export default {
         : {}
     },
     editItem(item) {
-      console.log(item)
+      // // console.log(item)
       this.editedItem = Object.assign({}, item)
       this.dialog = true
     },
@@ -656,7 +656,7 @@ export default {
         // }
         // eslint-disable-next-line no-unused-vars
       } catch (error) {
-        // console.log(error)
+        // // console.log(error)
         this.dataTableLoading = false
       }
     },
@@ -715,13 +715,13 @@ export default {
     uploadImage() {
       this.saving = true
       setTimeout(() => this.savedAvatar(), 1000)
-      // console.log(this.editItem.avatar)
+      // // console.log(this.editItem.avatar)
     },
     savedAvatar() {
       this.saving = false
       this.saved = true
       // debugger
-      // console.log(this.editItem.avatar)
+      // // console.log(this.editItem.avatar)
     },
     paginationChangeHandler(pageNumber) {
       this.pagination.page = pageNumber

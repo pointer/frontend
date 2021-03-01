@@ -14,7 +14,7 @@ const actions = {
         .getInvoiceTypes(payload)
         .then((response) => {
           if (response.status === 200) {
-            console.log(response.data.docs)
+            // console.log(response.data.docs)
             commit(types.INVOICETYPES, response.data.docs)
             commit(types.TOTAL_INVOICETYPES, response.data.totalDocs)
             resolve()

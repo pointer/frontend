@@ -14,7 +14,7 @@ const actions = {
         .getCustomers(payload)
         .then((response) => {
           if (response.status === 200) {
-            // console.log(response.data)
+            // // console.log(response.data)
             commit(types.CUSTOMERS, response.data)
             commit(types.TOTAL_CUSTOMERS, response.data.totalDocs)
             resolve()

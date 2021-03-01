@@ -46,7 +46,7 @@ export default {
       const { maxSize } = this
       const imageFile = file[0]
       // const imagePath = process.env.VUE_IMAGE_DIR + '/' + file[0]
-      // console.log('imageFile', imagePath)
+      // // console.log('imageFile', imagePath)
       if (file.length > 0) {
         const size = file[0].size / maxSize / maxSize
         if (!file[0].type.match('image.*')) {

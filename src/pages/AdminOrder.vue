@@ -538,7 +538,7 @@ export default {
       }, 400)
     },
     editedItem(newVal) {
-      //  console.log('item changed', newVal)
+      //  // console.log('item changed', newVal)
     }
   },
   methods: {
@@ -561,7 +561,7 @@ export default {
       return getFormat(date, 'iii, MMMM d yyyy, h:mm a')
     },
     getComponentByColumnType(header, data) {
-      console.log('updatePrice', header, data)
+      // console.log('updatePrice', header, data)
     },
     async doSearch() {
       try {
@@ -581,7 +581,7 @@ export default {
         : {}
     },
     editItem(item) {
-      // console.log('>>>editItem>>>>>>>>>>>>>>>>>>>', this.isEdit)
+      // // console.log('>>>editItem>>>>>>>>>>>>>>>>>>>', this.isEdit)
       this.isEdit = true
       this.editedItem = Object.assign(item)
       this.orderItems = Object.assign(item.order_items)
@@ -620,7 +620,7 @@ export default {
     // },
     close() {
       this.orderDlg = false
-      // console.log('>>>close>>>>>>>>>>>>>>>>>>>', this.isEdit)
+      // // console.log('>>>close>>>>>>>>>>>>>>>>>>>', this.isEdit)
       this.isEdit = false
       this.editedItem = Object.assign({}, this.defaultItem)
       this.editedIndex = -1
@@ -649,10 +649,10 @@ export default {
           this.orderItems.forEach((element) => {
             delete element.line_total
           })
-          // console.log(this.orderItems)
+          // // console.log(this.orderItems)
           this.editedItem.order_items = Object.assign(this.orderItems)
           // this.editedItem.orderItems = Object.assign(this.orderItems)
-          // console.log(this.editedItem)
+          // // console.log(this.editedItem)
           await this.saveOrder(this.editedItem)
           await this.getOrders(
             buildPayloadPagination(this.pagination, this.buildSearch())
@@ -699,7 +699,7 @@ export default {
       this.orderItems.forEach((item) => {
         const lineTotal =
           parseFloat(item.product_price) * parseFloat(item.product_quantity)
-        // console.log(lineTotal.toFixed(2))
+        // // console.log(lineTotal.toFixed(2))
         if (!isNaN(lineTotal)) {
           this.lineTotal = lineTotal.toFixed(2)
           this.orderItems.line_total = lineTotal.toFixed(2)
@@ -724,7 +724,7 @@ export default {
     calculateLineTotal(item) {
       const lineTotal =
         parseFloat(item.product_price) * parseFloat(item.product_quantity)
-      // console.log(lineTotal.toFixed(2))
+      // // console.log(lineTotal.toFixed(2))
       if (!isNaN(lineTotal)) {
         this.lineTotal = lineTotal.toFixed(2)
         item.line_total = lineTotal.toFixed(2)
@@ -763,7 +763,7 @@ export default {
         }
       }
       this.orderItems = Object.assign(item)
-      // console.log(this.orderItems)
+      // // console.log(this.orderItems)
       this.calculateTotal(this.orderItems)
     },
     getSalesTax(item) {
@@ -778,7 +778,7 @@ export default {
       })
     },
     validate() {
-      console.log('validate')
+      // // console.log('validate')
     },
     paginationChangeHandler(pageNumber) {
       this.pagination.page = pageNumber
@@ -822,7 +822,7 @@ export default {
   },
   updated() {
     // this.orders.forEach((order) => {
-    //   console.log(order.order_status)
+    //   // console.log(order.order_status)
     //   this.orderStatus.push(order.order_status)
     // })
   }

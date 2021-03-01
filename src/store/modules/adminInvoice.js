@@ -14,7 +14,7 @@ const actions = {
         .getInvoices(payload)
         .then((response) => {
           if (response.status === 200) {
-            // console.log(response.data.docs)
+            // // console.log(response.data.docs)
             commit(types.INVOICES, response.data.docs)
             commit(types.TOTAL_INVOICES, response.data.totalDocs)
             resolve()
@@ -33,7 +33,7 @@ const actions = {
       updated_by: payload.updated_by,
       invoice_no: payload.invoice_no
     }
-    console.log(payload)
+    // // console.log(payload)
     return new Promise((resolve, reject) => {
       api
         .editInvoice(payload._id, data)

@@ -424,10 +424,10 @@ export default {
     // tab: {
     //   set(tab) {
     //     this.$router.replace({ query: { ...this.$route.query, tab } })
-    //     console.log('set tab : ', tab)
+    //     // console.log('set tab : ', tab)
     //   },
     //   get() {
-    //     console.log('get tab : ', this.$route.query.tab)
+    //     // console.log('get tab : ', this.$route.query.tab)
     //     return this.$route.query.tab
     //   }
     // }
@@ -449,7 +449,7 @@ export default {
         // this.dataTableLoading = true
         // Updating item
         if (this.editedItem._id) {
-          console.log(this.editedItem)
+          // console.log(this.editedItem)
           await this.editOrganisation(this.editedItem)
           await this.getOrganisations(
             buildPayloadPagination(this.pagination, this.buildSearch())

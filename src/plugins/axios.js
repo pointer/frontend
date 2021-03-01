@@ -6,7 +6,7 @@ import { checkForUpdates } from '@/utils/updates.js'
 axios.defaults.baseURL =
   //  process.env.LOCAL_APP_API_URL || 'http://localhost:3000'
   process.env.CLOUD_APP_API_URL || 'https://gentle-spire-11787.herokuapp.com'
-console.log(axios.defaults.baseURL)
+// // console.log(axios.defaults.baseURL)
 axios.defaults.headers.common['Accept-Language'] =
   JSON.parse(localStorage.getItem('locale')) || 'en'
 // axios.defaults.headers.common['X-API-KEY'] =

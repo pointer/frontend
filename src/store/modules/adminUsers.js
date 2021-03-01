@@ -25,12 +25,12 @@ const actions = {
             //         // )}`
             //         value.data =
             //           'blob:http://localhost:8080/a3f6b9cc+daee+45c4+a86b+612d85951850'
-            //         console.log(value.data)
+            //         // console.log(value.data)
             //       }
             //     }
             //   }
             // })
-            // console.log(response.data.docs)
+            // // console.log(response.data.docs)
             commit(types.USERS, response.data.docs)
             commit(types.TOTAL_USERS, response.data.totalDocs)
             resolve()
@@ -73,7 +73,7 @@ const actions = {
   },
   saveUser({ commit }, payload) {
     // debugger
-    // console.log('payload.avatar: ', payload.avatar)
+    // // console.log('payload.avatar: ', payload.avatar)
     // let fileType = ''
     // for (const pair of payload.avatar.formData.entries()) {
     //   fileType = pair[1].type
@@ -82,7 +82,7 @@ const actions = {
     // payload.contentType = fileType
     // payload.imageURL = payload.avatar.imageURL
     // }
-    // console.log(
+    // // console.log(
     //   'Object.fromEntries : ',
     //   JSON.stringify(Object.fromEntries(payload.formData.entries()))
     // )
@@ -90,8 +90,8 @@ const actions = {
     //   fileType = pair[1].type
     // }
     // const formData = payload.serializeObject()
-    // console.log('serializeObject ', formData)
-    // console.log(payload)
+    // // console.log('serializeObject ', formData)
+    // // console.log(payload)
     // debugger
     return new Promise((resolve, reject) => {
       api

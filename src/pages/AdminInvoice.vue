@@ -463,7 +463,7 @@ export default {
       return getFormat(date, 'iii, MMMM d yyyy, h:mm a')
     },
     doSomething(v) {
-      // console.log('pagination', v)
+      // // console.log('pagination', v)
       this.pagination = v
     },
     async doSearch() {
@@ -491,7 +491,7 @@ export default {
       //   return prev
       // }, {})
       // let i = 0
-      // // console.log(this.organisation)
+      // // // console.log(this.organisation)
       // this.editedItem.invoice_items.forEach((element) => {
       //   const subitem = {
       //     description: element.product_name,
@@ -501,7 +501,7 @@ export default {
       //   this.invoice.items[i] = subitem
       //   i++
       // })
-      // // console.log(this.invoice.items)
+      // // // console.log(this.invoice.items)
       // // .display_name,
       // // company.address
       // this.company = {
@@ -725,9 +725,9 @@ export default {
       await this.getCustomers({ company: this.editedItem.invoice_customer })
       const company = this.$store.state.adminOrganisations.organisations
       const customer = this.$store.state.adminCustomer.customers
-      console.log(customer)
+      // // console.log(customer)
       doc.lineHeightProportion = 1
-      // console.log('getfont size' , doc.getFontSize())
+      // // console.log('getfont size' , doc.getFontSize())
       doc.text(company[0].display_name, xPos, yPos)
       doc.setFontSize(8)
       yPos += lineHeight
@@ -911,7 +911,7 @@ export default {
           while (!result.done) {
             const value = result.value
             total += value.length
-            console.log('Received chunk', value)
+            // console.log('Received chunk', value)
             // get the next result
             result = await reader.read()
           }

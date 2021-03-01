@@ -14,7 +14,7 @@ const actions = {
         .getOrderItems(payload)
         .then((response) => {
           if (response.status === 200) {
-            console.log(response.data.docs)
+            // console.log(response.data.docs)
             commit(types.ORDERITEMS, response.data.docs)
             commit(types.TOTAL_ORDERITEMS, response.data.totalDocs)
             resolve()

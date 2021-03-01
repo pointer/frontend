@@ -153,7 +153,7 @@ export default {
     ...mapActions(['userLogin']),
     async submit() {
       const valid = await this.$refs.observer.validate() // await this.$validator.validateAll()
-      console.log(valid)
+      // // console.log(valid)
       if (valid) {
         await this.userLogin({
           username: this.username,

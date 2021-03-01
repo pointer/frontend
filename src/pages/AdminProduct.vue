@@ -521,10 +521,10 @@ export default {
     // tab: {
     //   set(tab) {
     //     this.$router.replace({ query: { ...this.$route.query, tab } })
-    //     console.log('set tab : ', tab)
+    //     // console.log('set tab : ', tab)
     //   },
     //   get() {
-    //     console.log('get tab : ', this.$route.query.tab)
+    //     // console.log('get tab : ', this.$route.query.tab)
     //     return this.$route.query.tab
     //   }
     // }
@@ -571,14 +571,14 @@ export default {
       'getAllProductClass'
     ]),
     // addFiles() {
-    //   console.log('files', this.files)
+    //   // console.log('files', this.files)
     //   this.files.forEach((file, f) => {
     //     this.readers[f] = new FileReader()
     //     this.readers[f].onloadend = (e) => {
     //       const fileData = this.readers[f].result
     //       const imgRef = this.$refs.file[f]
     //       imgRef.src = fileData
-    //       // console.log(fileData)
+    //       // // console.log(fileData)
     //       // send to server here...
     //     }
 
@@ -696,7 +696,7 @@ export default {
         this.dataTableLoading = true
         // Updating item
         if (this.editedItem._id) {
-          console.log(this.editedItem)
+          // // console.log(this.editedItem)
           await this.editProduct(this.editedItem)
           await this.getProducts(
             buildPayloadPagination(this.pagination, this.buildSearch())
@@ -807,7 +807,7 @@ export default {
     //   document.body.appendChild(image)
     // })
     // .catch((e) =>
-    //   console.log(e)
+    //   // console.log(e)
     // )
   },
   async mounted() {

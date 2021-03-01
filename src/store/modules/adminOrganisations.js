@@ -14,7 +14,7 @@ const actions = {
         .getOrganisations(payload)
         .then((response) => {
           if (response.status === 200) {
-            // console.log(response.data)
+            // // console.log(response.data)
             commit(types.ORGANISATIONS, response.data.docs)
             commit(types.TOTAL_ORGANISATIONS, response.data.totalDocs)
             resolve()

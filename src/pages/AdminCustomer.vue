@@ -359,7 +359,7 @@ export default {
       ]
     },
     items() {
-      // console.log(this.$store.state.adminCustomer.customers)
+      // // console.log(this.$store.state.adminCustomer.customers)
       return this.$store.state.adminCustomer.customers
     },
     totalItems() {
@@ -413,7 +413,7 @@ export default {
       return getFormat(date, 'iii, MMMM d yyyy, h:mm a')
     },
     doSomething(v) {
-      // console.log('pagination', v)
+      // // console.log('pagination', v)
       this.pagination = v
     },
     async doSearch() {
@@ -495,7 +495,7 @@ export default {
         this.dataTableLoading = true
         // Updating item
         if (this.editedItem._id) {
-          console.log(this.editedItem)
+          // console.log(this.editedItem)
           await this.editCustomer(this.editedItem)
           await this.getCustomers(
             buildPayloadPagination(this.pagination, this.buildSearch())

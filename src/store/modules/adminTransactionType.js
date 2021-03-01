@@ -14,7 +14,7 @@ const actions = {
         .getTransactionTypes(payload)
         .then((response) => {
           if (response.status === 200) {
-            console.log(response.data.docs)
+            // console.log(response.data.docs)
             commit(types.TRANSACTIONTYPES, response.data.docs)
             commit(types.TOTAL_TRANSACTIONTYPES, response.data.totalDocs)
             resolve()

@@ -15,7 +15,7 @@ const actions = {
         .getProductClass(payload)
         .then((response) => {
           if (response.status === 200) {
-            console.log(response.data.docs)
+            // console.log(response.data.docs)
             const productClass_ = []
             response.data.forEach((element) => {
               productClass_.push(element.product_class)

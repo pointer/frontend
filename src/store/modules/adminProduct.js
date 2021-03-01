@@ -14,7 +14,7 @@ const actions = {
         .getProducts(payload)
         .then((response) => {
           if (response.status === 200) {
-            // console.log(response.data.docs)
+            // // console.log(response.data.docs)
             commit(types.PRODUCTS, response.data.docs)
             commit(types.TOTAL_PRODUCTS, response.data.totalDocs)
             resolve()
@@ -26,7 +26,7 @@ const actions = {
     })
   },
   editProduct({ commit }, payload) {
-    // console.log(payload)
+    // // console.log(payload)
     return new Promise((resolve, reject) => {
       api
         .editProduct(payload._id, payload)
@@ -47,7 +47,7 @@ const actions = {
     })
   },
   saveProduct({ commit }, payload) {
-    // console.log(payload)
+    // // console.log(payload)
     return new Promise((resolve, reject) => {
       api
         .saveProduct(payload)
@@ -68,7 +68,7 @@ const actions = {
     })
   },
   deleteProduct({ commit }, payload) {
-    // console.log(payload)
+    // // console.log(payload)
     return new Promise((resolve, reject) => {
       api
         .deleteProduct(payload)

@@ -14,7 +14,7 @@ const actions = {
         .getCities(payload)
         .then((response) => {
           if (response.status === 200) {
-            console.log(response.data.docs)
+            // // console.log(response.data.docs)
             commit(types.CITIES, response.data.docs)
             commit(types.TOTAL_CITIES, response.data.totalDocs)
             resolve()

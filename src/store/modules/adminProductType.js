@@ -14,7 +14,7 @@ const actions = {
         .getProductTypes(payload)
         .then((response) => {
           if (response.status === 200) {
-            // console.log(response.data.docs)
+            // // console.log(response.data.docs)
             commit(types.PRODUCTTYPES, response.data.docs)
             commit(types.TOTAL_PRODUCTTYPES, response.data.totalDocs)
             resolve()

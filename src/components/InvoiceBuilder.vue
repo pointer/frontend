@@ -214,7 +214,7 @@ export default {
 
   async mounted() {
     try {
-      console.log(this.invoiceCurrency)
+      //  // console.log(this.invoiceCurrency)
     } catch (error) {}
   }
 }

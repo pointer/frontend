@@ -18,7 +18,7 @@ const actions = {
             // array.forEach((element) => {
             //   accounts.push(element.account_name)
             // })
-            console.log(response.data)
+            // console.log(response.data)
             commit(types.FILL_ALL_ORGANISATIONS, response.data.docs)
             resolve()
           }

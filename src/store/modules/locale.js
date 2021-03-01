@@ -8,7 +8,7 @@ const getters = {
 
 const actions = {
   setLocale({ commit }, payload) {
-    // console.log(payload)
+    // // console.log(payload)
     commit(types.SUCCESS, null)
     commit(types.ERROR, null)
     i18n.locale = payload

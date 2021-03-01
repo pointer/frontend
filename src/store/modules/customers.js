@@ -23,7 +23,7 @@ const actions = {
                 id: element._id
               })
             })
-            // console.log(customers)
+            // // console.log(customers)
             commit(types.FILL_ALL_CUSTOMERS, customers)
             resolve()
           }

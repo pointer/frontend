@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export default {
   getCustomers(params) {
-    // console.log(params)
+    // // console.log(params)
     return axios.get('/customers', {
       params
     })

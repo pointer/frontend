@@ -76,7 +76,7 @@ export const handleError = (error, commit, reject) => {
   // Resets errors in store
   commit(types.SHOW_LOADING, false)
   commit(types.ERROR, null)
-  // console.log(error)
+  // // console.log(error)
   // Checks if unauthorized
   if (error.response.status === 401) {
     store.dispatch('userLogout')

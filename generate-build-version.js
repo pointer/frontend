@@ -11,11 +11,11 @@ const jsonContent = JSON.stringify(jsonData)
 
 fs.writeFile('./public/version.json', jsonContent, 'utf8', (err) => {
   if (err) {
-    console.log('An error occured while writing JSON Object to version.json')
-    return console.log(err)
+    // console.log('An error occured while writing JSON Object to version.json')
+    return // console.log(err)
   }
 
-  return console.log(
-    `version.json file has been saved with version ${appVersion}`
-  )
+  return // console.log(
+  ;`version.json file has been saved with version ${appVersion}`
+  // )
 })

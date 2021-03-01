@@ -13,7 +13,7 @@ const actions = {
         .getAllProducts()
         .then((response) => {
           if (response.status === 200) {
-            // console.log(response.data.docs)
+            // // console.log(response.data.docs)
             const products = []
             const array = response.data.docs
             array.forEach((element) => {

@@ -303,7 +303,7 @@ export default {
       return getFormat(date, 'iii, MMMM d yyyy, h:mm a')
     },
     doSomething(v) {
-      // console.log('pagination', v)
+      // // console.log('pagination', v)
       this.pagination = v
     },
     async doSearch() {
