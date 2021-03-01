@@ -311,7 +311,6 @@ export default {
           this.dataTableLoading = false
         } else {
           // Creating new item
-          debugger
           await this.saveProductType(this.editedItem)
           await this.getProductTypes(
             buildPayloadPagination(this.pagination, this.buildSearch())

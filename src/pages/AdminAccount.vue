@@ -292,7 +292,7 @@ export default {
     },
     async deleteItem(item) {
       try {
-        console.debug()
+        // console.debug()
         if (
           await this.$refs.confirm.openConfirm(
             'Confirmer',
