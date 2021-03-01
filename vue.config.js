@@ -6,9 +6,7 @@ module.exports = {
     devServer: {
       watchOptions: {
         ignored: ['/node_modules/', '/public/', '**/.#*']
-      }
-    },
-    devServer: {
+      },
       disableHostCheck: true,
       public: process.env.DEV_PUBLIC || 'localhost',
       port: process.env.DEV_PORT || 8080

@@ -19,7 +19,7 @@
             class="mx-2"
           >
           </v-switch>
-        </div> 
+        </div>
       </v-col>-->
     </v-row>
   </v-footer>

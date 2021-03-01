@@ -687,13 +687,13 @@ export default {
       const xPos = 10
       const text = 'This is a text without real content but with 59 characters.'
       const lineHeight = doc.getLineHeight(text) / doc.internal.scaleFactor
-      const pageWidth = 8.5,
-        // lineHeight = 1.2,
-        margin = 0.5,
-        maxLineWidth = pageWidth - margin * 2,
-        fontSize = 24,
-        ptsPerInch = 72,
-        oneLineHeight = (fontSize * lineHeight) / ptsPerInch
+      const pageWidth = 8.5
+      // lineHeight = 1.2,
+      const margin = 0.5
+      const maxLineWidth = pageWidth - margin * 2
+      const fontSize = 24
+      const ptsPerInch = 72
+      const oneLineHeight = (fontSize * lineHeight) / ptsPerInch
       const textLines = ''
       const textHeight = (textLines.length * fontSize * lineHeight) / ptsPerInch
       const splittedText = doc.splitTextToSize(text, 50)
@@ -733,17 +733,17 @@ export default {
       yPos += lineHeight
       doc.text(company[0].address, xPos, yPos)
       yPos += lineHeight
-      doc.text(company[0].postal_code + ', ' + company[0].locality, xPos, yPos)
+      doc.text(`${company[0].postal_code}, ${company[0].locality}`, xPos, yPos)
       yPos += lineHeight
-      doc.text(company[0].province + ' ' + company[0].country, xPos, yPos)
+      doc.text(`${company[0].province} ${company[0].country}`, xPos, yPos)
       yPos += 3 * lineHeight
-      const invoiceNo = 'Facture N° ' + this.editedItem.invoice_no.toString()
+      const invoiceNo = `Facture N° ${this.editedItem.invoice_no.toString()}`
       doc.setFontSize(16)
       doc.text(invoiceNo, xPos, yPos, null, null, 'left')
       // doc.setFontSize(8)
       const date = this.eFrench(new Date()).slice(0, 10)
       // yPos += lineHeight
-      doc.text('Date : ' + date, 185 + xPos, yPos, null, null, 'right')
+      doc.text(`Date : ${date}`, 185 + xPos, yPos, null, null, 'right')
       yPos = 10
       doc.setFontSize(16)
       doc.text(customer[0].company, 185 + xPos, yPos, null, null, 'right')
@@ -752,7 +752,7 @@ export default {
       doc.text(customer[0].address, 185 + xPos, yPos, null, null, 'right')
       yPos += lineHeight
       doc.text(
-        customer[0].postal_code + ' ' + customer[0].locality,
+        `${customer[0].postal_code} ${customer[0].locality}`,
         185 + xPos,
         yPos,
         null,
@@ -761,7 +761,7 @@ export default {
       )
       yPos += lineHeight
       doc.text(
-        customer[0].province + ' ' + customer[0].country,
+        `${customer[0].province} ${customer[0].country}`,
         185 + xPos,
         yPos,
         null,
@@ -829,7 +829,7 @@ export default {
       doc.text(
         170,
         yPos,
-        'Sous total :  ' + this.formatNum(localeSubtotal) + ' €',
+        `Sous total :  ${this.formatNum(localeSubtotal)} €`,
         null,
         null,
         'right'
@@ -841,7 +841,7 @@ export default {
       doc.text(
         170,
         yPos,
-        'TVA (20%) : ' + this.formatNum(tax) + ' €',
+        `TVA (20%) : ${this.formatNum(tax)} €`,
         null,
         null,
         'right'
@@ -851,7 +851,7 @@ export default {
       doc.text(
         170,
         yPos,
-        'Total :  ' + this.formatNum(total) + ' €',
+        `Total :  ${this.formatNum(total)} €`,
         null,
         null,
         'right'
@@ -862,11 +862,11 @@ export default {
       doc.setFontSize(8)
       doc.line(xPos, yPos, 190, yPos)
       yPos += lineHeight
-      doc.text(xPos, yPos, 'BIC : ' + company[0].bic, null, null, 'left')
+      doc.text(xPos, yPos, `BIC : ${company[0].bic}`, null, null, 'left')
       yPos += lineHeight
-      doc.text(xPos, yPos, 'IBAN : ' + company[0].iban, null, null, 'left')
+      doc.text(xPos, yPos, `IBAN : ${company[0].iban}`, null, null, 'left')
       yPos += lineHeight
-      doc.text(xPos, yPos, 'RIB : ' + company[0].rib, null, null, 'left')
+      doc.text(xPos, yPos, `RIB : ${company[0].rib}`, null, null, 'left')
       // const total = subTotal * 1.2
       // const tax =
       //   20 % doc.text('S/Total : ' + this.eFrench(subTotal), 205, 65 + i)
@@ -874,12 +874,9 @@ export default {
       // doc.text(this.eFrench(total), 215, 65 + i)
       // doc.fromHTML(document.body)
       const today = new Date().toISOString().slice(0, 10)
-      const filename =
-        customer[0].company.substring(0, 4) +
-        '-' +
-        today +
-        '-' +
+      const filename = `${customer[0].company.substring(0, 4)}-${today}-${
         this.editedItem.invoice_no
+      }`
       if (isIOSChrome) {
         // is Google Chrome on IOS
       } else if (
@@ -889,7 +886,7 @@ export default {
         isOpera === false &&
         isIEedge === false
       ) {
-        doc.save(filename + '.pdf')
+        doc.save(`${filename}.pdf`)
       } else {
         doc.output('dataurl')
       }
