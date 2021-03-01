@@ -4,8 +4,8 @@ import { checkIfTokenNeedsRefresh } from '@/utils/utils.js'
 import { checkForUpdates } from '@/utils/updates.js'
 
 axios.defaults.baseURL =
-  process.env.LOCAL_APP_API_URL || 'http://localhost:3000'
-// process.env.CLOUD_APP_API_URL || 'https://gentle-spire-11787.herokuapp.com'
+  //  process.env.LOCAL_APP_API_URL || 'http://localhost:3000'
+  process.env.CLOUD_APP_API_URL || 'https://gentle-spire-11787.herokuapp.com'
 console.log(axios.defaults.baseURL)
 axios.defaults.headers.common['Accept-Language'] =
   JSON.parse(localStorage.getItem('locale')) || 'en'
@@ -42,8 +42,8 @@ axios.interceptors.response.use(
     // Do something with response data
     // Checks if app is being used in mobile
     if (
-      // response.config.url !== `${process.env.CLOUD_APP_API_URL}/token` &&
-      response.config.url !== `${process.env.LOCAL_APP_API_URL}/token` &&
+      // response.config.url !== `${process.env.LOCAL_APP_API_URL}/token` &&
+      response.config.url !== `${process.env.CLOUD_APP_API_URL}/token` &&
       response.config.url !== `${window.location.origin}/version.json`
     ) {
       checkForUpdates()
