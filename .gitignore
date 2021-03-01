@@ -135,3 +135,5 @@ assets/user/images/VectorPortal-Dot-Wave-Background.jpg
 .env.e2e
 
 /profile.xml
+parameters.json
+template.json
