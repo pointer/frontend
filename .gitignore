@@ -89,7 +89,6 @@ dist/
 npm-debug.log
 www/
 src/fonts
-public/
 *.pem
 .jshintrc
 azure subscription Id.txt
